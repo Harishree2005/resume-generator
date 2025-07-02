@@ -1,4 +1,4 @@
-# 📝 Gemini Cover Letter Generator (Streamlit + Gemini 2.5 Flash API)
+# 📝AI Cover Letter Generator (Streamlit + Gemini 2.5 Flash API)
 
 This project is a web-based **AI Cover Letter Generator** powered by **Google Gemini 2.5 Flash-Lite Preview (06-17)** using the `streamlit` framework.
 
