@@ -1,13 +1,10 @@
 import streamlit as st
 import google.generativeai as genai
 
-# ✅ Paste your Gemini 2.5 Flash API key here
-genai.configure(api_key="GEMINI_API_KEY")  # Replace with your key
+genai.configure(api_key="GEMINI_API_KEY")
 
-# ✅ Gemini 2.5 Flash-Lite Preview model name
 MODEL_NAME = "models/gemini-1.5-flash-latest"
 
-# 🧠 Function to generate cover letter
 def generate_cover_letter(profile, job_description, temperature, max_tokens):
     prompt = f"""
     Write a professional and personalized cover letter for the following job.
@@ -29,7 +26,6 @@ def generate_cover_letter(profile, job_description, temperature, max_tokens):
 
     return response.text
 
-# 🧩 Streamlit app
 def main():
     st.set_page_config(page_title="Gemini 2.5 Flash Cover Letter Generator", page_icon="📝", layout="wide")
     st.title("📝 Cover Letter Generator (Gemini 2.5 Flash-Lite Preview)")
