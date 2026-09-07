@@ -154,7 +154,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/resume/generate",
+        "https://ai-resume-generator-api.onrender.com/api/resume/generate",
         {
           method: "POST",
           headers: {
